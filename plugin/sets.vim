@@ -1,9 +1,9 @@
 syntax on
-set relativenumber
+set relativenumber nu " relative numbers with regular num on current line
 set ignorecase      " ignore case
 set smartcase     " but don't ignore it, when search string contains uppercase letters
 set incsearch        " do incremental searching
-set noerrorbells
+set noerrorbells " dont make sounds pls
 set nohlsearch
 set noswapfile
 set nobackup

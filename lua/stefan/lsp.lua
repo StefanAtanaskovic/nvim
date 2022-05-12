@@ -65,7 +65,7 @@ require("nvim-lsp-installer").setup {}
 local servers = { 'pylsp', 'tsserver', 'clangd', 'html' }
 for _, lsp in pairs(servers) do
   require('lspconfig')[lsp].setup {
-    capabilities=capabilities,
+    capabilities=capabilities, -- setup cmp
     on_attach = on_attach,
     flags = {
       -- This will be the default in neovim 0.7+
@@ -75,7 +75,7 @@ for _, lsp in pairs(servers) do
 end
 
 require("lspconfig").gopls.setup{
-    capabilities=capabilities,
+    capabilities=capabilities, -- setup cmp
     on_attach = on_attach,
 	cmd = { "gopls", "serve" },
 	settings = {
