@@ -293,7 +293,7 @@ require("lazy").setup({
 				pyright = {},
 				rust_analyzer = {},
 				tsserver = {},
-
+				ocamllsp = {},
 				lua_ls = {
 					-- cmd = {...},
 					-- filetypes { ...},
@@ -369,6 +369,7 @@ require("lazy").setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
 				go = { "gofmt" },
+				ocaml = { "ocamlformat" },
 			},
 		},
 	},
