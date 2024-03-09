@@ -64,6 +64,12 @@ vim.opt.cursorline = true
 vim.o.scrolloff = 10
 vim.o.virtualedit = "onemore"
 
+-- Tabs and stuff
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -356,22 +362,6 @@ require("lazy").setup({
 		"ThePrimeagen/harpoon",
 		branch = "harpoon2",
 		dependencies = { "nvim-lua/plenary.nvim" },
-	},
-
-	{ -- Autoformat
-		"stevearc/conform.nvim",
-		opts = {
-			notify_on_error = false,
-			format_on_save = {
-				timeout_ms = 500,
-				lsp_fallback = true,
-			},
-			formatters_by_ft = {
-				lua = { "stylua" },
-				go = { "gofmt" },
-				ocaml = { "ocamlformat" },
-			},
-		},
 	},
 
 	{ -- Autocompletion
