@@ -22,4 +22,4 @@ require("stefan.harpoon_setup")
 require("stefan.nvimtree_setup")
 
 -- color theme
-vim.cmd[[colorscheme kanagawa]]
+vim.cmd[[colorscheme catppuccin]]
