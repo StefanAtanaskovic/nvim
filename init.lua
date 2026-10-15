@@ -11,6 +11,7 @@ vim.g.loaded_netrwPlugin = 1
 require("stefan.options")
 require("stefan.basic_keymaps")
 require("stefan.auto_commands")
+require("stefan.claude")
 
 -- Load lazy plugin menager
 require("stefan.lazy")
